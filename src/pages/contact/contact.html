@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Uneeb Ali</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="./contact.js"></script>
     <style>
         /* Custom styles for background image and animations */
         body {
@@ -49,14 +50,18 @@
         <!-- Contact Form Section -->
         <section class="overlay text-white p-8 rounded-lg shadow-lg max-w-2xl mx-auto animate-fadeIn">
             <h1 class="text-4xl font-bold mb-6 text-center">Contact Uneeb Ali</h1>
-            <form class="space-y-6">
+            <form class="space-y-6" id="contactForm" >
                 <div class="mb-4">
                     <label for="name" class="block text-sm font-medium">Name</label>
-                    <input type="text" id="name" class="w-full p-3 border rounded bg-white bg-opacity-10 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500">
+                    <input 
+                        id="name" 
+                        type="text" id="name" class="w-full p-3 border rounded bg-white bg-opacity-10 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500">
                 </div>
                 <div class="mb-4">
                     <label for="email" class="block text-sm font-medium">Email</label>
-                    <input type="email" id="email" class="w-full p-3 border rounded bg-white bg-opacity-10 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500">
+                    <input 
+                    id="email"
+                    type="email" id="email" class="w-full p-3 border rounded bg-white bg-opacity-10 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500">
                 </div>
                 <div class="mb-4">
                     <label for="message" class="block text-sm font-medium">Message</label>
