@@ -24,3 +24,34 @@ contactForm.addEventListener('submit', handleContactSubmit)
 
 const appName = document.getElementById("appName")
 appName.innerHTML = `<h1>${APP_NAME}</h1>`
+
+// name, email, age => umeeb
+// name2, email2, age2 => aamir
+
+
+let uneebName = "uneeb"
+let uneeebAge = 123
+
+let uneeb = { 
+    name: `uneeb ali`,
+    age: 12,
+    isWearGlasses: false,
+    canStudy: (course1, course2)=>{
+        console.log(`is studing ${course1} and ${course2}`)
+    }
+}
+
+console.log(uneeb)
+console.log(uneeb.name) // 
+console.log(uneeb.age) // 
+console.log(uneeb.isWearGlasses) // 
+uneeb.canStudy("web", "os")
+
+let name2 = uneeb.name
+
+const uneebHtml = document.getElementById("uneebHtml")
+uneebHtml.innerHTML = `
+    <h1>${uneeb.name} is ${uneeb.age} years old having email ${uneeb.email} </h1>
+`
+
+console.log(typeof(uneeb))
